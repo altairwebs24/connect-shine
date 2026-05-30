@@ -116,7 +116,7 @@ function Index() {
             </div>
           </div>
           <div className="relative">
-            <img src={aboutImg} alt="Elegency Interiors completed home" loading="lazy" className="w-full h-[600px] object-cover" />
+            <img src={aboutImg} alt="Elegency Interiors completed home" loading="lazy" className="w-full h-auto object-contain bg-secondary/40" />
             <div className="absolute -bottom-6 -left-6 bg-cream border border-border p-6 max-w-xs hidden sm:block">
               <Monogram className="text-3xl text-bronze" />
               <p className="text-sm text-muted-foreground mt-2 italic font-serif">"We bring everything home — from the first sketch to the final cushion."</p>
@@ -155,7 +155,7 @@ function Index() {
       {/* KITCHENS */}
       <section id="kitchens" className="py-24 sm:py-32 px-6">
         <div className="max-w-7xl mx-auto grid lg:grid-cols-2 gap-16 items-center">
-          <img src={kitchenImg} alt="Level One Kitchen by Elegency Interiors" loading="lazy" className="w-full h-[600px] object-cover" />
+          <img src={kitchenImg} alt="Level One Kitchen by Elegency Interiors" loading="lazy" className="w-full h-auto object-contain bg-secondary/40" />
           <div>
             <p className="text-xs tracking-[0.35em] uppercase text-accent mb-6">Signature Kitchens</p>
             <h2 className="text-4xl sm:text-5xl mb-4 leading-tight">Level One <em className="text-bronze">Kitchen</em></h2>
@@ -202,10 +202,10 @@ function Index() {
             <h2 className="text-4xl sm:text-5xl leading-tight">Recent <em className="text-bronze">installations.</em></h2>
             <p className="text-muted-foreground mt-4">A selection of bathrooms, kitchens and bespoke joinery from our recent projects.</p>
           </div>
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-3 md:gap-4">
+          <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 md:gap-6">
             {[g1, g2, g3, g4].map((src, i) => (
-              <div key={i} className={`overflow-hidden ${i % 3 === 0 ? "row-span-2 aspect-[3/5]" : "aspect-square"} group`}>
-                <img src={src} alt={`Elegency Interiors project ${i + 1}`} loading="lazy" className="w-full h-full object-cover group-hover:scale-105 transition duration-700" />
+              <div key={i} className="overflow-hidden bg-secondary/40 group">
+                <img src={src} alt={`Elegency Interiors project ${i + 1}`} loading="lazy" className="w-full h-auto object-contain group-hover:scale-[1.02] transition duration-700" />
               </div>
             ))}
           </div>
@@ -232,7 +232,7 @@ function Index() {
             ))}
           </div>
           <div className="mt-16 grid sm:grid-cols-2 gap-6">
-            <img src={fireplaceImg} alt="Custom built-in TV wall with fireplace" loading="lazy" className="w-full h-[420px] object-cover" />
+            <img src={fireplaceImg} alt="Custom built-in TV wall with fireplace" loading="lazy" className="w-full h-auto object-contain bg-ink" />
             <div className="bg-secondary/5 border border-cream/10 p-10 flex flex-col justify-between">
               <div>
                 <h3 className="text-3xl text-cream mb-4">Custom Built-Ins</h3>
