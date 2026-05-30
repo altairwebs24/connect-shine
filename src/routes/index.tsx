@@ -4,6 +4,10 @@ import heroImg from "@/assets/elegency/hero.jpg";
 import aboutImg from "@/assets/elegency/about.jpg";
 import kitchenImg from "@/assets/elegency/kitchen.jpg";
 import fireplaceImg from "@/assets/elegency/fireplace.jpg";
+import g1 from "@/assets/elegency/g1.jpg";
+import g2 from "@/assets/elegency/g2.jpg";
+import g3 from "@/assets/elegency/g3.jpg";
+import g4 from "@/assets/elegency/g4.jpg";
 
 export const Route = createFileRoute("/")({
   head: () => ({
@@ -70,8 +74,8 @@ function Index() {
 
       {/* HERO */}
       <section id="top" className="relative h-[100svh] min-h-[640px] w-full overflow-hidden">
-        <img src={heroImg} alt="Modern luxury living room at twilight" className="absolute inset-0 w-full h-full object-cover" width={1920} height={1280} />
-        <div className="absolute inset-0 bg-gradient-to-b from-black/40 via-black/20 to-black/70" />
+        <img src={heroImg} alt="Elegency Interiors kitchen" className="absolute inset-0 w-full h-full object-cover" />
+        <div className="absolute inset-0 bg-gradient-to-b from-black/30 via-black/30 to-black/80" />
         <div className="relative z-10 h-full flex flex-col justify-end max-w-7xl mx-auto px-6 pb-20 sm:pb-28">
           <p className="text-cream/80 text-xs tracking-[0.4em] uppercase mb-6">Est. 2021 · Sandton, Johannesburg</p>
           <h1 className="text-cream font-serif text-5xl sm:text-7xl md:text-8xl leading-[0.95] max-w-4xl">
@@ -189,6 +193,25 @@ function Index() {
           </div>
         </div>
       </section>
+
+      {/* GALLERY */}
+      <section id="gallery" className="py-24 sm:py-32 px-6 bg-secondary/30">
+        <div className="max-w-7xl mx-auto">
+          <div className="mb-16 max-w-2xl">
+            <p className="text-xs tracking-[0.35em] uppercase text-accent mb-4">Portfolio</p>
+            <h2 className="text-4xl sm:text-5xl leading-tight">Recent <em className="text-bronze">installations.</em></h2>
+            <p className="text-muted-foreground mt-4">A selection of bathrooms, kitchens and bespoke joinery from our recent projects.</p>
+          </div>
+          <div className="grid grid-cols-2 md:grid-cols-4 gap-3 md:gap-4">
+            {[g1, g2, g3, g4].map((src, i) => (
+              <div key={i} className={`overflow-hidden ${i % 3 === 0 ? "row-span-2 aspect-[3/5]" : "aspect-square"} group`}>
+                <img src={src} alt={`Elegency Interiors project ${i + 1}`} loading="lazy" className="w-full h-full object-cover group-hover:scale-105 transition duration-700" />
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
 
       {/* WORK / VIDEOS */}
       <section id="work" className="py-24 sm:py-32 px-6 bg-ink text-cream">
