@@ -116,7 +116,7 @@ function Index() {
             </div>
           </div>
           <div className="relative">
-            <img src={aboutImg} alt="Elegency Interiors completed home" loading="lazy" className="w-full h-[600px] object-cover" />
+            <img src={aboutImg} alt="Elegency Interiors completed home" loading="lazy" className="w-full h-auto object-contain bg-secondary/40" />
             <div className="absolute -bottom-6 -left-6 bg-cream border border-border p-6 max-w-xs hidden sm:block">
               <Monogram className="text-3xl text-bronze" />
               <p className="text-sm text-muted-foreground mt-2 italic font-serif">"We bring everything home — from the first sketch to the final cushion."</p>
