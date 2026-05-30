@@ -232,7 +232,7 @@ function Index() {
             ))}
           </div>
           <div className="mt-16 grid sm:grid-cols-2 gap-6">
-            <img src={fireplaceImg} alt="Custom built-in TV wall with fireplace" loading="lazy" className="w-full h-[420px] object-cover" />
+            <img src={fireplaceImg} alt="Custom built-in TV wall with fireplace" loading="lazy" className="w-full h-auto object-contain bg-ink" />
             <div className="bg-secondary/5 border border-cream/10 p-10 flex flex-col justify-between">
               <div>
                 <h3 className="text-3xl text-cream mb-4">Custom Built-Ins</h3>
