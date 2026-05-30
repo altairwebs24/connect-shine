@@ -4,6 +4,10 @@ import heroImg from "@/assets/elegency/hero.jpg";
 import aboutImg from "@/assets/elegency/about.jpg";
 import kitchenImg from "@/assets/elegency/kitchen.jpg";
 import fireplaceImg from "@/assets/elegency/fireplace.jpg";
+import g1 from "@/assets/elegency/g1.jpg";
+import g2 from "@/assets/elegency/g2.jpg";
+import g3 from "@/assets/elegency/g3.jpg";
+import g4 from "@/assets/elegency/g4.jpg";
 
 export const Route = createFileRoute("/")({
   head: () => ({
