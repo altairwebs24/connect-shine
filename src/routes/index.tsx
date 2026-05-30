@@ -202,10 +202,10 @@ function Index() {
             <h2 className="text-4xl sm:text-5xl leading-tight">Recent <em className="text-bronze">installations.</em></h2>
             <p className="text-muted-foreground mt-4">A selection of bathrooms, kitchens and bespoke joinery from our recent projects.</p>
           </div>
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-3 md:gap-4">
+          <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 md:gap-6">
             {[g1, g2, g3, g4].map((src, i) => (
-              <div key={i} className={`overflow-hidden ${i % 3 === 0 ? "row-span-2 aspect-[3/5]" : "aspect-square"} group`}>
-                <img src={src} alt={`Elegency Interiors project ${i + 1}`} loading="lazy" className="w-full h-full object-cover group-hover:scale-105 transition duration-700" />
+              <div key={i} className="overflow-hidden bg-secondary/40 group">
+                <img src={src} alt={`Elegency Interiors project ${i + 1}`} loading="lazy" className="w-full h-auto object-contain group-hover:scale-[1.02] transition duration-700" />
               </div>
             ))}
           </div>
