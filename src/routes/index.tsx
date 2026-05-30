@@ -155,7 +155,7 @@ function Index() {
       {/* KITCHENS */}
       <section id="kitchens" className="py-24 sm:py-32 px-6">
         <div className="max-w-7xl mx-auto grid lg:grid-cols-2 gap-16 items-center">
-          <img src={kitchenImg} alt="Level One Kitchen by Elegency Interiors" loading="lazy" className="w-full h-[600px] object-cover" />
+          <img src={kitchenImg} alt="Level One Kitchen by Elegency Interiors" loading="lazy" className="w-full h-auto object-contain bg-secondary/40" />
           <div>
             <p className="text-xs tracking-[0.35em] uppercase text-accent mb-6">Signature Kitchens</p>
             <h2 className="text-4xl sm:text-5xl mb-4 leading-tight">Level One <em className="text-bronze">Kitchen</em></h2>
