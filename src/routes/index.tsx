@@ -190,6 +190,25 @@ function Index() {
         </div>
       </section>
 
+      {/* GALLERY */}
+      <section id="gallery" className="py-24 sm:py-32 px-6 bg-secondary/30">
+        <div className="max-w-7xl mx-auto">
+          <div className="mb-16 max-w-2xl">
+            <p className="text-xs tracking-[0.35em] uppercase text-accent mb-4">Portfolio</p>
+            <h2 className="text-4xl sm:text-5xl leading-tight">Recent <em className="text-bronze">installations.</em></h2>
+            <p className="text-muted-foreground mt-4">A selection of bathrooms, kitchens and bespoke joinery from our recent projects.</p>
+          </div>
+          <div className="grid grid-cols-2 md:grid-cols-4 gap-3 md:gap-4">
+            {[g1, g2, g3, g4].map((src, i) => (
+              <div key={i} className={`overflow-hidden ${i % 3 === 0 ? "row-span-2 aspect-[3/5]" : "aspect-square"} group`}>
+                <img src={src} alt={`Elegency Interiors project ${i + 1}`} loading="lazy" className="w-full h-full object-cover group-hover:scale-105 transition duration-700" />
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+
       {/* WORK / VIDEOS */}
       <section id="work" className="py-24 sm:py-32 px-6 bg-ink text-cream">
         <div className="max-w-7xl mx-auto">
