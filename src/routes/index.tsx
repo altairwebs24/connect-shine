@@ -70,8 +70,8 @@ function Index() {
 
       {/* HERO */}
       <section id="top" className="relative h-[100svh] min-h-[640px] w-full overflow-hidden">
-        <img src={heroImg} alt="Modern luxury living room at twilight" className="absolute inset-0 w-full h-full object-cover" width={1920} height={1280} />
-        <div className="absolute inset-0 bg-gradient-to-b from-black/40 via-black/20 to-black/70" />
+        <img src={heroImg} alt="Elegency Interiors kitchen" className="absolute inset-0 w-full h-full object-cover" />
+        <div className="absolute inset-0 bg-gradient-to-b from-black/30 via-black/30 to-black/80" />
         <div className="relative z-10 h-full flex flex-col justify-end max-w-7xl mx-auto px-6 pb-20 sm:pb-28">
           <p className="text-cream/80 text-xs tracking-[0.4em] uppercase mb-6">Est. 2021 · Sandton, Johannesburg</p>
           <h1 className="text-cream font-serif text-5xl sm:text-7xl md:text-8xl leading-[0.95] max-w-4xl">
